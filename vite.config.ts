@@ -13,18 +13,10 @@ export default defineConfig({
       name: 'Vue3HelloWorld',
       fileName: (format) => `vue3-hello-world.${format}.js`
     },
+    sourcemap: isProductionMode,
     rollupOptions: {
-      // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ['vue'],
       output: {
-        exports: "named",
-        // Provide global variables to use in the UMD build
-        // for externalized deps
-        globals: {
-          vue: 'Vue'
-        },
-        sourcemap: isProductionMode
+        exports: "named"
       }
     }
   }
