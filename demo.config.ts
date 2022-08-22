@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     outDir: 'demo',
-    assetsDir: './'
+    assetsDir: './',
   },
 })

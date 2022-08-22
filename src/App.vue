@@ -1,21 +1,12 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Vue3HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 // Use as local component
 import { Vue3HelloWorld } from './lib'
-
-export default defineComponent({
-  name: 'App',
-  components: {
-    // Use as local component
-    Vue3HelloWorld
-  }
-})
 </script>
+
+<template>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <Vue3HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+</template>
 
 <style>
 #app {
